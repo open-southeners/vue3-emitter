@@ -1,0 +1,17 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "allowJs": false,
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
