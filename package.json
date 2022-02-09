@@ -11,7 +11,7 @@
     "dist/*"
   ],
   "scripts": {
-    "bundle": "microbundle --compress false",
+    "bundle": "microbundle",
     "watch": "yarn run bundle watch",
     "clean": "rimraf dist",
     "build": "npm-run-all --silent clean -p bundle",
