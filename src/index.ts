@@ -1,6 +1,7 @@
 import { onMounted, onBeforeUnmount } from "vue"
 import mitt, { Emitter, EventType, Handler } from "mitt"
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface Events extends Record<EventType, unknown> {}
 
 const emitter: Emitter<Events> = mitt<Events>()
