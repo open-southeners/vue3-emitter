@@ -1,23 +1,22 @@
 {
   "name": "vue3-emitter",
   "version": "1.0.1",
-  "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
-  "module": "dist/index.mjs",
-  "source": "src/index.ts",
-  "jsnext:main": "dist/index.mjs",
-  "typings": "dist/index.d.ts",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/*"
   ],
   "scripts": {
-    "bundle": "microbundle",
+    "bundle": "microbundle -f esm,cjs",
     "watch": "yarn run bundle watch",
     "clean": "rimraf dist",
     "build": "npm-run-all --silent clean -p bundle",
     "test": "mocha"
   },
   "dependencies": {
+    "@vueuse/core": "^7.6.1",
     "mitt": "^3.0.0",
     "vue": "^3.2.29"
   },
