@@ -5,6 +5,9 @@
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/open-southeners/vue3-emitter"
+  },
   "files": [
     "dist/*"
   ],
