@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-          
+
       - name: install, build, and test
         run: |
           yarn install
@@ -30,4 +30,5 @@ jobs:
         with:
           # project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           api-token: ${{ secrets.CODACY_API_TOKEN }}
-          coverage-reports: coverage/lcov.info
+          coverage-reports: coverage/clover.xml
+          language: JavaScript
