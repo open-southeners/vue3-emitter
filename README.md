@@ -15,7 +15,7 @@ yarn add vue3-emitter
 And then use it in your Vue app like this:
 
 ```js
-import emitter from 'vue3-emitter'
+import { emitter } from 'vue3-emitter'
 
 emitter.listen('test_event', payload => console.log({ payload }))
 ```
@@ -23,7 +23,7 @@ emitter.listen('test_event', payload => console.log({ payload }))
 In other file:
 
 ```js
-import emitter from 'vue3-emitter'
+import { emitter } from 'vue3-emitter'
 
 emitter.emit('test_event', { foo: 'bar' })
 ```

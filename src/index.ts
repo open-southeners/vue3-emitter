@@ -4,15 +4,15 @@ import mitt, { Emitter, EventType, Handler } from "mitt"
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface Events extends Record<EventType, unknown> {}
 
-const emitter: Emitter<Events> = mitt<Events>()
+const emit: Emitter<Events> = mitt<Events>()
 
 function subscribe<Key extends keyof Events>(
   type: Key,
   handler: Handler<Events[Key]>
 ) {
-  emitter.on(type, handler)
+  emit.on(type, handler)
 
-  return (handler?: Handler<Events[Key]>) => emitter.off(type, handler)
+  return (handler?: Handler<Events[Key]>) => emit.off(type, handler)
 }
 
 declare type HandlerObject = {
@@ -31,8 +31,10 @@ function listen<Key extends keyof Events>(
     tryOnBeforeUnmount(() => subscription(handler.off))
   } else {
     tryOnMounted(() => (subscription = subscribe(type, handler)))
-    tryOnBeforeUnmount(() => subscription())
+    tryOnBeforeUnmount(() => subscription(handler))
   }
 }
 
-export default Object.assign({}, emitter, { subscribe, listen })
+export { Listen, Emit } from "./components"
+
+export const emitter = Object.assign({}, emit, { subscribe, listen })
