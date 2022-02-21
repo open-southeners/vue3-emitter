@@ -2,7 +2,7 @@
 
 vue3-emitter is a mitt wrapper into Vue 3 for global typed events.
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c8949d9579694b9da52b5458246b0318)](https://www.codacy.com/gh/open-southeners/vue3-emitter/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=open-southeners/vue3-emitter&amp;utm_campaign=Badge_Grade) [![Test](https://github.com/open-southeners/vue3-emitter/actions/workflows/test.yml/badge.svg)](https://github.com/open-southeners/vue3-emitter/actions/workflows/test.yml)
+[![Test](https://github.com/open-southeners/vue3-emitter/actions/workflows/test.yml/badge.svg)](https://github.com/open-southeners/vue3-emitter/actions/workflows/test.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/c8949d9579694b9da52b5458246b0318)](https://www.codacy.com/gh/open-southeners/vue3-emitter/dashboard?utm_source=github.com&utm_medium=referral&utm_content=open-southeners/vue3-emitter&utm_campaign=Badge_Coverage) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c8949d9579694b9da52b5458246b0318)](https://www.codacy.com/gh/open-southeners/vue3-emitter/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=open-southeners/vue3-emitter&amp;utm_campaign=Badge_Grade) [![NPM Downloads](https://img.shields.io/npm/dm/vue3-emitter)](https://www.npmjs.com/package/vue3-emitter) [![NPM Size](https://img.shields.io/bundlephobia/min/vue3-emitter)](https://www.npmjs.com/package/vue3-emitter)  [![NPM Version](https://img.shields.io/npm/v/vue3-emitter)](https://www.npmjs.com/package/vue3-emitter)
 
 ## Getting started
 

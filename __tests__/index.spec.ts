@@ -102,7 +102,7 @@ test('unsubscribes from events once parent component unmounted but maintaining o
     }
   })
 
-  const secondWrapper = mount(SecondListenComponent)
+  mount(SecondListenComponent)
 
   expect(emitter.all.get(POST_PICTURE_EVENT)).not.toEqual([])
   

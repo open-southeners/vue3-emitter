@@ -9,7 +9,7 @@ test('Emit component emits a global event', () => {
 
   emitter.on('test', payload => (payloadResult = payload))
 
-  const wrapper = mount(Emit, {
+  mount(Emit, {
     props: {
       event: 'test',
       payload: 'hello world'
