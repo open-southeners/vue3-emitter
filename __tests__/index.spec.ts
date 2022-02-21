@@ -1,6 +1,6 @@
 import { mount, enableAutoUnmount } from '@vue/test-utils'
 import { defineComponent, nextTick, PropType, ref } from 'vue'
-import { emitter } from '..'
+import { emitter } from '../src'
 
 const POST_PICTURE_EVENT = 'picture.post.event'
 
@@ -13,7 +13,7 @@ interface PostPicturePayload {
   image: ImageObj
 }
 
-declare module '..' {
+declare module '../src' {
   interface Events {
     [POST_PICTURE_EVENT]: PostPicturePayload
   }

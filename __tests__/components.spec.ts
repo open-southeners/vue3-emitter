@@ -1,6 +1,6 @@
 import { enableAutoUnmount, mount } from "@vue/test-utils"
 import { nextTick } from "vue"
-import { emitter, Emit, Listen } from ".."
+import { emitter, Emit, Listen } from "../src"
 
 enableAutoUnmount(afterEach)
 
