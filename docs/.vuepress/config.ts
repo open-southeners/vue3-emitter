@@ -38,6 +38,10 @@ export default defineUserConfig<DefaultThemeOptions>({
           '/guide/upgrading.md',
         ],
       },
+      {
+        text: 'Discord',
+        link: 'https://discord.gg/tyMUxvMnvh'
+      },
     ],
 
     sidebar: {

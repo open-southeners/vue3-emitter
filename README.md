@@ -6,4 +6,4 @@ vue3-emitter is a mitt wrapper into Vue 3 for global typed events.
 
 ## Documentation
 
-[Check the official documentation here](http://opensoutheners.com/).
+[Check the official documentation here](https://vue3-emitter.opensoutheners.com).
