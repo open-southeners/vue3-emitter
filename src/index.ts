@@ -31,7 +31,7 @@ function listen<Key extends keyof Events>(
     tryOnBeforeUnmount(() => subscription(handler.off))
   } else {
     tryOnMounted(() => (subscription = subscribe(type, handler)))
-    tryOnBeforeUnmount(() => subscription(handler))
+    tryOnBeforeUnmount(() => typeof subscription === "function" ? subscription(handler): undefined)
   }
 }
 
