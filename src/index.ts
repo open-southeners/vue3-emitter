@@ -1,5 +1,5 @@
-import { tryOnMounted, tryOnBeforeUnmount } from "@vueuse/core"
 import mitt, { Emitter, EventType, Handler } from "mitt"
+import { tryOnBeforeUnmount, tryOnMounted } from "@vueuse/shared"
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface Events extends Record<EventType, unknown> {}
@@ -27,10 +27,10 @@ function listen<Key extends keyof Events>(
   let subscription: (handler?: Handler<Events[Key]>) => void
 
   if (typeof handler === "object") {
-    tryOnMounted(() => (subscription = subscribe(type, handler.on)))
+    tryOnMounted(() => (subscription = subscribe(type, handler.on)), false)
     tryOnBeforeUnmount(() => subscription(handler.off))
   } else {
-    tryOnMounted(() => (subscription = subscribe(type, handler)))
+    tryOnMounted(() => (subscription = subscribe(type, handler)), false)
     tryOnBeforeUnmount(() => typeof subscription === "function" ? subscription(handler): undefined)
   }
 }
