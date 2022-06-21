@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.0] - 2022-06-21
+
+### Fixed
+
+- Move `@vueuse/shared` to dependencies so it can detect current Vue instance
+
 ## [2.0.1] - 2022-06-10
 
 ### Fixed
