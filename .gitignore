@@ -4,5 +4,3 @@ dist
 *.log
 .swc
 coverage
-.temp
-.cache
