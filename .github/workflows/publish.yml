@@ -1,20 +1,37 @@
 name: Publish
 
 on:
-  release:
-    types: [ published ]
+  push:
+    tags:
+      - '**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-          cache: 'npm'
+          cache: 'yarn'
       - run: yarn install
-      - run: npm publish --access public --tag ${{ github.event.release.tag_name }}
+      - run: npm publish --access public --tag ${{ github.ref_name }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Get latest release info
+        id: get-release-info
+        uses: release-flow/keep-a-changelog-action/get-release-info@v1
+        with:
+          release-version: latest
+
+      - name: Publish to Github releases
+        uses: softprops/action-gh-release@v1
+        with:
+          body: ${{ steps.get-release-info.outputs.release-notes }}
+          # TODO: Check PR https://github.com/softprops/action-gh-release/pull/304
+          # make_latest: ${{ $GITHUB_REF_NAME == 'main' && true || false }}
+          # TODO: Workaround for the above (semi-automatic workflow when non main releases):
+          draft: ${{ $GITHUB_REF_NAME != 'main' && true || false }}
+          # prerelease: true
