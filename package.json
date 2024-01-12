@@ -1,7 +1,7 @@
 {
   "name": "vue3-emitter",
   "version": "2.1.0",
-  "homepage": "https://vue3-emitter.opensoutheners.com",
+  "homepage": "https://docs.opensoutheners.com/vue-3-emitter",
   "repository": {
     "url": "https://github.com/open-southeners/vue3-emitter"
   },
@@ -44,5 +44,6 @@
     "rimraf": "^3.0.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }

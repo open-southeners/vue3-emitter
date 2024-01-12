@@ -12,10 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 18
 
       - name: install, build, and test
         run: |
@@ -24,10 +24,11 @@ jobs:
           yarn test
         env:
           CI: true
-      
-      - name: Deploy coverage to codacy
-        uses: codacy/codacy-coverage-reporter-action@v1
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
         with:
-          # project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          api-token: ${{ secrets.CODACY_API_TOKEN }}
-          coverage-reports: coverage/lcov.info
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          fail_ci_if_error: true
+          verbose: true
