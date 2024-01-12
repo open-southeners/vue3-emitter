@@ -19,13 +19,10 @@
     "clean": "rimraf dist",
     "build": "npm-run-all --silent clean -p bundle",
     "prepublishOnly": "yarn run build",
-    "test": "yarn jest",
-    "docs:build": "vuepress build docs",
-    "docs:clean-dev": "vuepress dev docs --clean-cache",
-    "docs:dev": "vuepress dev docs"
+    "test": "yarn jest"
   },
   "dependencies": {
-    "@vueuse/shared": "^8.7.4",
+    "@vueuse/shared": "^9.0",
     "mitt": "^3.0.0",
     "vue": "^3.0"
   },
