@@ -32,6 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:17.0.45"],\
           ["@typescript-eslint/eslint-plugin", "virtual:b54ebe6b3c41a6050c159cccd2a5d5c39da259306bc8bd0fe9f0038bc9eb03535d4810b6cf3cb0a497aa64c4e7d07f5731157f0df8c16f629eaa65ac975eec37#npm:5.49.0"],\
           ["@typescript-eslint/parser", "virtual:b54ebe6b3c41a6050c159cccd2a5d5c39da259306bc8bd0fe9f0038bc9eb03535d4810b6cf3cb0a497aa64c4e7d07f5731157f0df8c16f629eaa65ac975eec37#npm:5.49.0"],\
+          ["@vue/compiler-dom", "npm:3.4.10"],\
           ["@vue/test-utils", "virtual:b54ebe6b3c41a6050c159cccd2a5d5c39da259306bc8bd0fe9f0038bc9eb03535d4810b6cf3cb0a497aa64c4e7d07f5731157f0df8c16f629eaa65ac975eec37#npm:2.2.7"],\
           ["@vueuse/shared", "npm:9.11.1"],\
           ["eslint", "npm:8.32.0"],\
@@ -576,6 +577,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@babel-parser-npm-7.18.5-8654dc512a-10c0.zip/node_modules/@babel/parser/",\
         "packageDependencies": [\
           ["@babel/parser", "npm:7.18.5"],\
+          ["@babel/types", "npm:7.23.6"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.23.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/@babel-parser-npm-7.23.6-2fad283d6e-10c0.zip/node_modules/@babel/parser/",\
+        "packageDependencies": [\
+          ["@babel/parser", "npm:7.23.6"],\
           ["@babel/types", "npm:7.23.6"]\
         ],\
         "linkType": "HARD"\
@@ -4329,6 +4338,18 @@ const RAW_RUNTIME_STATE =
           ["source-map", "npm:0.6.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.4.10", {\
+        "packageLocation": "../../../.yarn/berry/cache/@vue-compiler-core-npm-3.4.10-5733c5dca4-10c0.zip/node_modules/@vue/compiler-core/",\
+        "packageDependencies": [\
+          ["@vue/compiler-core", "npm:3.4.10"],\
+          ["@babel/parser", "npm:7.23.6"],\
+          ["@vue/shared", "npm:3.4.10"],\
+          ["entities", "npm:4.5.0"],\
+          ["estree-walker", "npm:2.0.2"],\
+          ["source-map-js", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@vue/compiler-dom", [\
@@ -4338,6 +4359,15 @@ const RAW_RUNTIME_STATE =
           ["@vue/compiler-dom", "npm:3.2.31"],\
           ["@vue/compiler-core", "npm:3.2.31"],\
           ["@vue/shared", "npm:3.2.31"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.4.10", {\
+        "packageLocation": "../../../.yarn/berry/cache/@vue-compiler-dom-npm-3.4.10-fa652b42e9-10c0.zip/node_modules/@vue/compiler-dom/",\
+        "packageDependencies": [\
+          ["@vue/compiler-dom", "npm:3.4.10"],\
+          ["@vue/compiler-core", "npm:3.4.10"],\
+          ["@vue/shared", "npm:3.4.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4448,6 +4478,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@vue-shared-npm-3.2.31-faed7ca80e-10c0.zip/node_modules/@vue/shared/",\
         "packageDependencies": [\
           ["@vue/shared", "npm:3.2.31"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.4.10", {\
+        "packageLocation": "../../../.yarn/berry/cache/@vue-shared-npm-3.4.10-3d49c1ea73-10c0.zip/node_modules/@vue/shared/",\
+        "packageDependencies": [\
+          ["@vue/shared", "npm:3.4.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6113,6 +6150,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/entities-npm-2.2.0-0fc8d5b2f7-10c0.zip/node_modules/entities/",\
         "packageDependencies": [\
           ["entities", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.5.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/entities-npm-4.5.0-7cdb83b832-10c0.zip/node_modules/entities/",\
+        "packageDependencies": [\
+          ["entities", "npm:4.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12121,6 +12165,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:17.0.45"],\
           ["@typescript-eslint/eslint-plugin", "virtual:b54ebe6b3c41a6050c159cccd2a5d5c39da259306bc8bd0fe9f0038bc9eb03535d4810b6cf3cb0a497aa64c4e7d07f5731157f0df8c16f629eaa65ac975eec37#npm:5.49.0"],\
           ["@typescript-eslint/parser", "virtual:b54ebe6b3c41a6050c159cccd2a5d5c39da259306bc8bd0fe9f0038bc9eb03535d4810b6cf3cb0a497aa64c4e7d07f5731157f0df8c16f629eaa65ac975eec37#npm:5.49.0"],\
+          ["@vue/compiler-dom", "npm:3.4.10"],\
           ["@vue/test-utils", "virtual:b54ebe6b3c41a6050c159cccd2a5d5c39da259306bc8bd0fe9f0038bc9eb03535d4810b6cf3cb0a497aa64c4e7d07f5731157f0df8c16f629eaa65ac975eec37#npm:2.2.7"],\
           ["@vueuse/shared", "npm:9.11.1"],\
           ["eslint", "npm:8.32.0"],\
